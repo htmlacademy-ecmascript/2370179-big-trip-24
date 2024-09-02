@@ -1,7 +1,7 @@
 # Проект «Большое путешествие»
 
 * Студент: [Анна](https://up.htmlacademy.ru/ecmascript/24/user/2370179).
-* Наставник: `Неизвестно`.
+* Наставник: [Денис Лопатин](https://github.com/DenisLopatin).
 
 ---
 
