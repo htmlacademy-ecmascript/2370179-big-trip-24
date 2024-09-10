@@ -1,5 +1,4 @@
 import { createElement } from '../render.js';
-import view from './view.js';
 
 function createSortTemplate() {
   return `
@@ -27,7 +26,7 @@ function createSortTemplate() {
     </form>`;
 }
 
-export default class SortView extends view {
+export default class SortView {
   getTemplate() {
     return createSortTemplate();
   }

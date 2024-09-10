@@ -10,6 +10,8 @@ export default class MainPresenter {
   boardComponent = new EditView();
   routePointListComponent = new RoutePointListView();
   sortComponent = new SortView ();
+  pointComponent = new PointView ();
+  pointeditComponent = new PointEditFormView ();
 
   constructor({boardContainer}) {
     this.boardContainer = boardContainer;
@@ -17,11 +19,11 @@ export default class MainPresenter {
 
   init() {
     render(this.boardComponent, this.boardContainer);
-    render(this.sortComponent, this.boardComponent.getElement());
+    render(this.sortComponent, this.boardContainer, this.boardComponent.getElement());
     render(this.routePointListComponent, this.boardComponent.getElement());
-    render(new PointEditFormView(), this.routePointListComponent.getElement());
+    render(this.pointeditComponent, this.routePointListComponent.getElement());
     for (let i = 0; i < 3; i++) {
-      render(new PointView(), this.routePointListComponent.getElement());
+      render(this.pointComponent, this.routePointListComponent.getElement());
     }
 
   }

@@ -1,11 +1,10 @@
 import { createElement } from '../render.js';
-import view from './view.js';
 
 function createEditFormTemplate() {
   return '<section class="trip-events"></section>';
 }
 
-export default class EditView extends view{
+export default class EditView {
   getTemplate() {
     return createEditFormTemplate();
   }

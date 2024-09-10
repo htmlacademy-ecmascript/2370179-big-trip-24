@@ -1,11 +1,10 @@
 import {createElement} from '../render.js';
-import view from './view.js';
 
 function createRoutePointListTemplate() {
   return '<div class="trip-events__list"></div>';
 }
 
-export default class RoutePointListView extends view {
+export default class RoutePointListView {
   getTemplate() {
     return createRoutePointListTemplate();
   }

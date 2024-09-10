@@ -1,5 +1,4 @@
 import { createElement } from '../render.js';
-import view from './view.js';
 
 function createPriceRouteTemplate() {
   return `
@@ -14,7 +13,7 @@ function createPriceRouteTemplate() {
           </section>`;
 }
 
-export default class PriceView extends view {
+export default class PriceView {
   getTemplate() {
     return createPriceRouteTemplate();
   }

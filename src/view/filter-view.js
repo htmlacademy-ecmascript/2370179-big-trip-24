@@ -1,5 +1,4 @@
 import { createElement } from '../render.js';
-import view from './view.js';
 
 function createFilterTemplate() {
   return `
@@ -29,7 +28,7 @@ function createFilterTemplate() {
     </div>`;
 }
 
-export default class FilterView extends view {
+export default class FilterView {
   getTemplate() {
     return createFilterTemplate();
   }
