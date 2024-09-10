@@ -1,5 +1,3 @@
-import view from "./view/view";
-
 const RenderPosition = {
   BEFOREBEGIN: 'beforebegin',
   AFTERBEGIN: 'afterbegin',
@@ -13,12 +11,6 @@ function createElement(template) {
 
   return newElement.firstElementChild;
 }
-/**
-
- * @param {view} component
- * @param {HTMLElement} container
- *
- */
 
 function render(component, container, place = RenderPosition.BEFOREEND) {
   container.insertAdjacentElement(place, component.getElement());
